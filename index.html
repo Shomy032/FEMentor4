@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<!-- link for css file -->
+<link rel="stylesheet" href="styleFEM4.css">
+
+<!-- script for FONT AWESOME icons -->
+<script src="https://kit.fontawesome.com/9f29b1c5a3.js" crossorigin="anonymous"></script>
+<!-- link za Font Awesome icons -->
+<script src="https://kit.fontawesome.com/9f29b1c5a3.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- one script with multiply functions for this project , all is wraped in one function myF() , whitch is set to bodu 'onLoad' -->
+  <script src="slider.js"></script>
+</head>
+<!-- function for slider -->
+<body onload="myF()">
+<div class="wrap">
+
+<div class="text">
+  <h2>Simple, traffic-based pricing</h2>
+<h3>Sign-up for our 30-day trial.</h3>
+<h3> No credit card required.</h3>
+</div>  
+
+<div class="card">
+<h6>100k Pageviews</h6>
+
+
+<input 
+type="range"
+value="5000" 
+ min="0" 
+ max="10000" 
+ 
+ id="mySlider" 
+ class="slider">
+
+
+<h4><span class="cena" id="value">0</span><span class="month">/ month</span>  <span class="inviz" id="inviz">- 25%</span>  </h4>
+
+<div class="check">
+<h5>Monthly Billing</h5>
+ <div class="togggle"> <!-- div that wraps label  -->
+<label class="switch">
+  <label class="switch">
+  <input type="checkbox" class="check" id="checkBox">
+  <span class="sliderr round"></span>
+</label>
+</div>
+<h5> Yearly Billing <span class="discount">- 25% <span class="dis">discount</span></span></h5>
+</div>
+
+<div class="btn-list">
+<ul>
+  <li><span><i class="fas fa-check"></i></span> Unlimited websites</li>
+  <li><span><i class="fas fa-check"></i></span>  100% data ownership</li>
+  <li><span><i class="fas fa-check"></i></span>   Email reports</li>
+</ul>
+<button onclick="location.href='congratulations.html'" class="btnn" id="buut"> Start my trial </button>
+</div>
+
+</div>
+
+
+</div>
+
+  
+ 
+</body>
+</html>

@@ -1,0 +1,359 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{
+  /* debbug */
+  /* outline: solid 2px red;   */
+
+  /* reset */
+  padding: 0;
+  margin: 0;
+
+font-family: 'Manrope' , sans-serif;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+body{
+  min-height: 100vh;
+  background-color: rgb(240, 239, 239);
+ 
+ background-image: url(./images/pattern-circles.svg);
+  background-position: center 10px;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+.wrap{
+  width: 98%;
+  margin: 2rem  auto ;
+  padding: 0.5rem;
+}
+
+h2{
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  color: #293356;
+}
+h3{
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 14px;
+ 
+  opacity: 0.7;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.card{
+
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+background-color: white;
+border-radius: 0.5rem;
+
+max-width: 100%;
+  width: 95%;
+  margin: 4rem auto;
+  padding-top: 2rem;
+}
+.check {
+  display: inline-block;
+   margin-top: 3rem ;/* ZA SAD */
+}
+h5{
+  display: inline-block;
+  padding-top: 20px;
+  margin-bottom: auto;
+
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.cena{
+  color: #293356;
+  
+
+  font-size: 2.5rem;
+  display: inline;
+}
+.discount{
+  display: inline-block;
+  background-color: rgb(243, 203, 205);
+  border-radius: 3rem;
+  padding: 0.2rem;
+}
+.dis{
+  display: none;
+}
+/* wraper for lista and button */
+.btn-list{
+  margin-top: 4rem;
+}
+ul{
+  /* margin-top: 4rem; */
+  margin-bottom: 2rem;
+  list-style-type: none;
+}
+ul li{
+  margin: 1rem 0;
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+span i {
+  color: rgb(0, 255, 200);
+  margin-right: 1rem;
+  font-size: 16px;
+}
+button{
+  padding: 0.8rem 3rem;
+  margin-bottom: 3rem;
+  
+  background-color: #1e2a4d;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  border-radius: 1.6rem;
+  border: none;
+  box-shadow: rgb(80, 96, 112) 0px 10px 30px -10px;
+
+  transition: 300ms;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.9;
+  
+}
+
+h6{
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  opacity: 0.5;
+  font-weight: 800;
+}
+h4{
+  
+
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+h4 .inviz{
+  display: none;
+
+  background-color: rgb(243, 203, 205);
+  border-radius: 3rem;
+  padding: 0.2rem;
+}
+
+h4 .inviz , .month{
+  
+  transform: translateY(-50%);
+  margin-left: 1rem;
+}
+.month{
+  display: inline-block;
+}
+.slider{
+  margin: 3rem auto;
+  width: 90%;
+height: 13px;
+
+border-radius: 7px;
+background: linear-gradient(90deg , rgb(0, 255, 200) 50% ,  rgb(219, 219, 219)50%);
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+
+  
+}
+/* SLIDER THUMB FOR GOOGLE CHROME */
+.slider::-webkit-slider-thumb{
+-webkit-appearance: none;
+appearance: none;
+height: 50px;
+width: 50px;
+background-color:rgb(0, 255, 200);
+
+background-image: url(./images/icon-slider.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30px ;
+
+outline: none;
+border: none;
+border-radius: 25px;
+
+cursor: pointer;
+transition: 300ms;
+}
+/* SLIDER THUMB FOR MOZILA-FIREFOX */
+.slider::-moz-range-thumb{
+  height: 50px;
+  width: 50px;
+  background-color:  rgb(0, 255, 200);
+
+  background-image: url(./images/icon-slider.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30px ;
+  
+  
+  outline: none;
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+  transition: 300ms;
+}
+/* HOver for mozile firefox */
+.slider::-moz-range-thumb:hover{
+ box-shadow:  0 10px 10px 2px rgb(177, 250, 234);
+ cursor: -webkit-grab;
+   cursor: grab;
+}
+
+/* hover for google chrome */
+.slider::-webkit-slider-thumb:hover{
+  box-shadow:  0 10px 10px 2px rgb(177, 250, 234);
+  cursor: -webkit-grab;
+   cursor: grab;
+}
+
+/* STYLES FOR CHECKBOX SWITCH */
+/* wrap container for checkbox */
+.togggle{
+  display: inline-block;
+
+  /* margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem; */
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: inline-block;
+
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.sliderr {
+  display: inline-block;
+
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.sliderr:before {
+  display: inline-block;
+
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderr {
+  background-color: rgb(0, 255, 200);
+}
+
+input:focus + .sliderr {
+  box-shadow: 0 0 1px rgb(0, 255, 200);
+}
+
+input:checked + .sliderr:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.sliderr.round {
+  border-radius: 34px;
+  transform: translateY(90%);
+}
+
+@-moz-document url-prefix() {
+  .sliderr.round {
+    transform: translateY(120%);
+  }
+}
+.sliderr.round:before {
+  border-radius: 50%;
+} 
+/* 1. media only for 1 margin  */
+@media screen and (min-width:400px){
+  .togggle{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  } 
+}
+
+@media screen and (min-width:700px){
+  *{
+    /* debbuger */
+    /* outline: solid red 1px; */
+    font-family: 'Manrope' , sans-serif;
+}
+body{
+  overflow: hidden;
+}
+button , ul{
+  margin: 0;
+}
+.btn-list{
+  margin: 1rem 0;
+margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+position: relative;
+
+padding: 2rem 0;
+margin: 3rem auto;
+width: 600px;
+}
+h4{
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  transform: translateY(-50% );
+}
+h6{
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  transform: translateY(-50% );
+}
+.slider{
+  margin-top: 7rem ;
+  margin-bottom: 0rem;
+}
+.dis{
+  display: inline;
+}
+}
+
