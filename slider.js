@@ -40,7 +40,7 @@ function myF(){
  slider.addEventListener('input', update);
    update();
 
-  slider.addEventListener('mousemove' , () =>{
+  slider.addEventListener('input' , () =>{
     var slider1 = document.querySelector(".slider");
     var x = (slider1.value/100);
     var color = 'linear-gradient(90deg , rgb(0, 255, 200)' + x + '% ,  rgb(219, 219, 219)' + x + '%)' ;
